@@ -24,7 +24,7 @@ mpirun -np 36 python main_nas.py -hi_dataset 2 -low_dataset 2 -low_reduced_searc
 
 ## Results
 
-Running the train and evaluation scripts of the agents on either environmnet (synthetic MDP or NAS) will yield a pickled dictionary of results in the data folder. By loading this dictionary into "results", 
+Running either of the previous commands will yield a pickled dictionary of results in the data folder. By loading this dictionary into "results", 
 
-- results["HF"]["test_ep_rewards"]: test results of the MCRL agent trained on the single high-fidelity environment.
-- results["MF"]["test_ep_rewards"]: test results of the MFMCRL agent trained on the multifidelity environment.
+- results["HF"]["test_ep_rewards"]: test episode rewards of the MCRL agent trained on the single high-fidelity environment.
+- results["MF"]["test_ep_rewards"]: test episode rewards of the MFMCRL agent trained on the multifidelity environment.
