@@ -21,10 +21,11 @@ To train the agent using both MCRL and MFMCRL and test the agent's performance o
 ```train
 mpirun -np 36 python main_nas.py -hi_dataset 2 -low_dataset 2 -low_reduced_search_space 0 -n_low_sa 1 -train_ep 10000
 ```
+Note that every mpi process will launch an independent training and evaluation trial with seed = mpi rank.
 
 ## Results
 
-Running either of the previous commands will yield a pickled dictionary of results in the data folder. By loading this dictionary into "results", 
+Running either of the previous commands will yield a pickled dictionary "seed_mpi_rank" of results in the data/exp_descr folder. By loading this dictionary into "results", 
 
 - results["HF"]["test_ep_rewards"]: test episode rewards of the MCRL agent trained on the single high-fidelity environment.
 - results["MF"]["test_ep_rewards"]: test episode rewards of the MFMCRL agent trained on the multifidelity environment.
