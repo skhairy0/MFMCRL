@@ -1,1 +1,1 @@
-We use the API provided by [NASLib 0.1.0](https://github.com/automl/NASLib) to retrieve the validation accuracy curves of all candidate architectures in NAS-Bench-201 and store them in those pickled python dictionary to speed up reward retrieval for the RL agent.
+We use the API provided by [NASLib 0.1.0](https://github.com/automl/NASLib) to retrieve the validation accuracy curves of all candidate architectures in NAS-Bench-201 and store them in pickled python dictionary to speed up reward retrieval for the RL agent.
