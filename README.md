@@ -1,6 +1,6 @@
 # Multifidelity Reinforcement Learning with Control Variates
 
-This repository is the official implementation of the paper "Multifidelity Reinforcement Learning with Control Variates."
+This repository is the official implementation of the paper ["Multifidelity Reinforcement Learning with Control Variates."](https://arxiv.org/abs/2206.05165)
 
 ## Requirements
 
